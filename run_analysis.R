@@ -58,4 +58,4 @@ names(tidy_data) <- gsub("std", "Std", names(tidy_data))
 names(tidy_data) <- gsub("-", "", names(tidy_data))
 
 # output to tidy_data.txt
-write.table(tidy_data, file = "./tidy_data.txt")
+write.table(tidy_data, file = "./tidy_data.txt", row.name=FALSE)
